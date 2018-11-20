@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true">
+        <shape>
+            <solid android:color="@color/light_blue" />
+            <!-- 四个角的弧度 -->
+            <corners
+                android:radius="10dp"/>
+
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/light_gray" />
+        </shape>
+    </item>
+    <item android:state_checked="false">
+        <shape>
+            <solid android:color="@color/gray_light_6a" />
+            <!-- 四个角的弧度 -->
+            <corners
+                android:radius="10dp"/>
+
+            <stroke
+                android:width="0.5dp"
+                android:color="@color/gray_black" />
+        </shape>
+    </item>
+</selector>

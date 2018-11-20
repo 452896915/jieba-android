@@ -1,0 +1,6 @@
+be 3 n
+beh 3 n
+bf 3 n
+c 3 n
+dg 3 n
+dgj 3 n
