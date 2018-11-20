@@ -22,6 +22,7 @@ public class JiebaSegmenter {
     private WordDictionary wordDict;
     private FinalSeg finalSeg;
     private boolean initReady = false;
+    private static final int SLEEP_TIME = 100;
 
     public static enum SegMode {
         INDEX,
@@ -74,7 +75,7 @@ public class JiebaSegmenter {
             public void run() {
                 while (!initReady) {
                     try {
-                        Thread.sleep(100);
+                        Thread.sleep(SLEEP_TIME);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
@@ -97,7 +98,7 @@ public class JiebaSegmenter {
     public ArrayList<String> getDividedString(String query) {
         while (!initReady) {
             try {
-                Thread.sleep(100);
+                Thread.sleep(SLEEP_TIME);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
@@ -122,7 +123,7 @@ public class JiebaSegmenter {
     public List<SegToken> process(String query, SegMode mode) {
         while (!initReady) {
             try {
-                Thread.sleep(100);
+                Thread.sleep(SLEEP_TIME);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
