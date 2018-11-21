@@ -3,7 +3,11 @@
 
 感谢jieba分词原作者[fxsjy](https://github.com/fxsjy)，感谢jieba分词的java版本作者[huaban](https://github.com/huaban)，本代码的移植基于java版[jieba-analysis](https://github.com/huaban/jieba-analysis)，在其基础上加入了Android Asset下字典文件的生成和读取，并重点优化了在手机上的启动速度。直接读取原始字典文件进行初始化在测试手机上需要28秒完成，通过将加载字典文件生成的字典树存储成特殊格式的中间文件，本工程代码将初始化时间降到1.5秒，分词速度在1秒以内。实现详情参考文章：https://www.jianshu.com/p/fda5cf1d3e6a
 
-# 接入方式
+**Demo App效果展示**
+
+![效果展示](https://upload-images.jianshu.io/upload_images/2839011-b0c07fe3255cacf1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+
+**接入方式**
 
 在gradle中加入：
 ```
@@ -37,5 +41,6 @@ public static enum SegMode {
 public List<SegToken> process(String query, SegMode mode) {...}
 ```
 
-# 主要参数：
+**主要参数**
+
 加载35万词典1.5秒，分词1秒以内。
