@@ -5,7 +5,13 @@
 
 **Demo App效果展示**
 
-![效果展示](https://upload-images.jianshu.io/upload_images/2839011-b0c07fe3255cacf1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+单纯分词效果：
+
+![效果展示1](https://upload-images.jianshu.io/upload_images/2839011-b0c07fe3255cacf1.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/400)
+
+分词结合搜索效果：
+
+![效果展示2](https://upload-images.jianshu.io/upload_images/2839011-69032a2f47d64172.gif?imageMogr2/auto-orient/strip)
 
 **接入方式**
 
