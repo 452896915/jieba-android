@@ -280,15 +280,10 @@ public class JiebaSegmenter {
         int N = sentence.length();
 
         long start = System.currentTimeMillis();
+        // 将一段文字转换成有向无环图，该有向无环图包含了跟字典文件得出的所有可能的单词切分
         Map<Integer, List<Integer>> dag = createDAG(sentence);
-        long end = System.currentTimeMillis();
-        Log.d(LOGTAG, String.format("createDAG takes %d ms", end - start));
 
-        long start2 = System.currentTimeMillis();
         Map<Integer, Pair<Integer>> route = calc(sentence, dag);
-
-        long end2 = System.currentTimeMillis();
-        Log.d(LOGTAG, String.format("calc takes %d ms", end2 - start2));
 
         int x = 0;
         int y = 0;

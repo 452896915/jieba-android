@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">jieba-android</string>
+    <string name="ui_divider">分词</string>
+    <string name="divide_action_copy">复制</string>
+    <string name="divide_action_all">全选</string>
+    <string name="divide_action_none">全不选</string>
+    <string name="divide_action_translate">翻译</string>
+    <string name="divide_action_search">搜索</string>
 </resources>

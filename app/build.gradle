@@ -17,11 +17,11 @@ android {
         }
     }
 
-    repositories {
-        flatDir {
-            dirs 'libs'
-        }
-    }
+//    repositories {
+//        flatDir {
+//            dirs 'libs'
+//        }
+//    }
 }
 
 dependencies {
@@ -33,5 +33,10 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation(name: 'jieba_android-release', ext: 'aar')
+//    implementation(name: 'jieba_android-release', ext: 'aar')
+    implementation 'com.hyman:flowlayout-lib:1.1.2'
+    compile 'jackmego.com.jieba_android:jieba_android-release:0.1.0'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'com.android.support:design:27.1.1'
+
 }

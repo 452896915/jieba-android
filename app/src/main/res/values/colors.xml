@@ -57,4 +57,9 @@
     <color name="possible_result_points">#c0ffff00</color>
     <color name="theme_yellow">#fece6b</color>
     <color name="positive">#F4564D</color>
+
+    <color name="textBlue">#3b9bfe</color>
+    <color name="textGray">#aeaeae</color>
+    <color name="gray_bkg">#edf4ff</color>
+    <color name="divider_aeaeae">#aeaeae</color>
 </resources>

@@ -1,4 +1,20 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+
+publish {
+
+    def groupProjectID = 'jackmego.com.jieba_android'
+    def artifactProjectID = 'jieba_android-release'
+    def publishVersionID = '0.1.0'
+
+    userOrg = 'jackmego'
+    repoName = 'JiebaAndroid'
+    groupId = groupProjectID
+    artifactId = artifactProjectID
+    publishVersion = publishVersionID
+    desc = 'Android library for Chinese word segmenter Jieba.'
+    website = 'https://github.com/452896915/jieba-android'
+}
 
 android {
     compileSdkVersion 28
