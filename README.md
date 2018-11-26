@@ -20,6 +20,17 @@
 compile 'jackmego.com.jieba_android:jieba_android-release:0.1.0'
 ```
 
+在proguard-rules中添加下面的混淆规则：
+```
+-keep class jackmego.com.jieba_android.RequestCallback { *; }
+-keep class jackmego.com.jieba_android.JiebaSegmenter { *; }
+-keep class jackmego.com.jieba_android.JiebaSegmenter$** {   # keep enum
+    **[] $VALUES;
+    public *;
+}
+-keep class jackmego.com.jieba_android.SegToken { *; }
+```
+
 使用的时候首先进行初始化，一般在MyApplication里进行：
 
 ```
